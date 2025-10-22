@@ -58,12 +58,19 @@ No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 
 **¿Cuántos pasos se han ejecutado?**
 # RESPONDER 
+3
 
 ### Inspeccionar la imagen creada
 # COMPLETAR CON UNA CAPTURA
 
+<img width="727" height="938" alt="image" src="https://github.com/user-attachments/assets/df88fb7f-4384-4b22-a052-6c7508444844" />
+
+
+
 **Modificar el archivo index.html para incluir su nombre y luego crear una nueva versión de la imagen anterior**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
+
+Solo 1 paso se ejecutó activamente, el resto se reutilizó de la caché.
 
 ## Mecanismo de caché
 Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso de construcción y evitar la repetición de pasos que no han cambiado. Cada instrucción en un Dockerfile crea una capa en la imagen final. Docker intenta reutilizar las capas de una construcción anterior si no han cambiado, lo que reduce significativamente el tiempo de construcción.
