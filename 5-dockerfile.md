@@ -88,8 +88,16 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 ### ¿Con que puerto host se está realizando el mapeo?
 # COMPLETAR CON LA RESPUESTA
 
+32768
+
 **¿Qué es una imagen huérfana?**
 # COMPLETAR CON LA RESPUESTA
+
+
+Una imagen huérfana (dangling image) es una imagen que ya no tiene etiquetas y no está asociada a ningún contenedor.
+
+Normalmente ocurre cuando reconstruyes imágenes y Docker mantiene capas antiguas que ya no se usan.
+
 
 ### Identificar imágenes huérfanas
 ```
